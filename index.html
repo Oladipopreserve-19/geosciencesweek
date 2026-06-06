@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — Geosciences Week 2026</title>
+  <meta name="description" content="Register for Geosciences Week 2026, University of Ilorin. 22nd–25th June 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker">Nigerian Mining &amp; Geosciences Society (NMGS)</p>
+        <h1 class="hero-title">GEOSCIENCES<br />WEEK <span>2026</span></h1>
+        <p class="hero-theme">Geoscience Beyond Boundaries: Innovation for a Sustainable Future</p>
+        <ul class="hero-meta">
+          <li><span class="dot"></span> 22nd – 25th June 2026</li>
+          <li><span class="dot"></span> University of Ilorin, Geology Lecture Theater</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="form-wrap">
+      <div class="card">
+        <h2 class="card-title">Event Registration</h2>
+        <p class="card-sub">Fill in your details below to reserve your spot. A confirmation email with the event flyer will be sent to you.</p>
+
+        <form id="registration-form" novalidate>
+          <div class="grid">
+            <div class="field">
+              <label for="firstName">First name <span>*</span></label>
+              <input id="firstName" name="firstName" type="text" autocomplete="given-name" required placeholder="e.g. Ayomide" />
+            </div>
+            <div class="field">
+              <label for="lastName">Last name <span>*</span></label>
+              <input id="lastName" name="lastName" type="text" autocomplete="family-name" required placeholder="e.g. Oladipo" />
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="field">
+              <label for="matricNumber">Matric number <span>*</span></label>
+              <input id="matricNumber" name="matricNumber" type="text" required placeholder="e.g. 20/52HA001" />
+            </div>
+            <div class="field">
+              <label for="level">Level <span>*</span></label>
+              <select id="level" name="level" required>
+                <option value="" disabled selected>Select level</option>
+                <option value="100">100 Level</option>
+                <option value="200">200 Level</option>
+                <option value="300">300 Level</option>
+                <option value="400">400 Level</option>
+                <option value="500">500 Level</option>
+                <option value="Postgraduate">Postgraduate</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="department">Department <span>*</span></label>
+            <select id="department" name="department" required>
+              <option value="" disabled selected>Select department</option>
+              <option value="Geology and Mineral Sciences">Geology and Mineral Sciences</option>
+              <option value="Geophysics">Geophysics</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="grid">
+            <div class="field">
+              <label for="email">Email <span>*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="phone">Phone number <span>*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="e.g. 08012345678" />
+            </div>
+          </div>
+
+          <p class="form-error" id="formError" role="alert" hidden></p>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span class="btn-label">Register now</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <p class="card-footnote">
+          For any info: Mustapha Lukman +2347058391388 · Abayomi Gideon +2348028306405
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Successful — Geosciences Week 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker">Nigerian Mining &amp; Geosciences Society (NMGS)</p>
+        <h1 class="hero-title">GEOSCIENCES<br />WEEK <span>2026</span></h1>
+        <p class="hero-theme">Geoscience Beyond Boundaries: Innovation for a Sustainable Future</p>
+        <ul class="hero-meta">
+          <li><span class="dot"></span> 22nd – 25th June 2026</li>
+          <li><span class="dot"></span> University of Ilorin, Geology Lecture Theater</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="form-wrap">
+      <div class="card success-card">
+        <div class="success-icon" aria-hidden="true">✓</div>
+        <h2 class="card-title" id="successTitle">You're registered!</h2>
+        <p class="card-sub">
+          Thank you for registering for <strong>Geosciences Week 2026</strong>.
+          A confirmation email with the event flyer has been sent to your inbox.
+          We can't wait to see you on <strong>22nd–25th June 2026</strong> at the
+          University of Ilorin, Geology Lecture Theater.
+        </p>
+        <div class="success-actions">
+          <a class="btn-secondary dark" href="index.html">Register another person</a>
+        </div>
+        <p class="card-footnote">
+          Didn't get the email? Check your spam folder, or contact
+          Mustapha Lukman +2347058391388 · Abayomi Gideon +2348028306405
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Personalize the heading with the registrant's first name, if present.
+    const name = new URLSearchParams(window.location.search).get("name");
+    if (name) {
+      const clean = name.replace(/[<>]/g, "").slice(0, 40);
+      document.getElementById("successTitle").textContent =
+        `You're registered, ${clean}!`;
+    }
+  </script>
+</body>
+</html>
